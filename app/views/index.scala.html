@@ -1,7 +1,23 @@
-@(message: String)
+@(personForm: Form[models.Person], person: String, gender: String)
 
-@main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message, style = "Java")
-    
+@import helper._
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) } 
+
+@main("Twitter Bootstrap Example", "Index") {
+
+<div class="container">
+  <div class="well">
+  <h3>Sample Form</h3>
+ 
+  @form(routes.Application.submit(), 'class -> "form-horizontal") {
+    @inputText(personForm("name"), '_label -> "Name", 'id -> "name")
+    @select(personForm("gender"), options = options(models.Person.getGenders()), '_default -> "Choose a gender", '_label -> "Gender", 'id -> "gender")
+    <div class="control-group">
+      <div class="controls">  
+        <input id="submit" type="submit" value="Submit" class="btn btn-primary">
+      </div>
+    </div>
+    }
+  </div>
+</div>
 }

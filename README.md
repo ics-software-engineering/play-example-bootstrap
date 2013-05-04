@@ -1,4 +1,4 @@
-![screenshot](https://raw.github.com/ics-software-engineering/play-example-fluentlenium/gh-pages/images/play-example-fluentlenium-screenshot.png)
+![screenshot](https://raw.github.com/ics-software-engineering/play-example-fluentlenium/master/doc/images/play-example-bootstrap-screenshot.png)
 
 An example play application illustrating the use of Twitter Bootstrap 2.x with Play 2.x.
 GitHub Home Page is [here](http://ics-software-engineering.github.io/play-example-fluentlenium/). 

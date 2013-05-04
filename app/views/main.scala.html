@@ -1,16 +1,27 @@
-@(title: String)(content: Html)
+@(title: String, currentPage: String)(content: Html)
 
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("css/bootstrap.min.css"))">
-        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
-    </head>
-    <body>
-        @content
-    </body>
+  <head>
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("css/bootstrap.min.css"))">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+  </head>
+  <body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="@routes.Application.display()">Twitter Bootstrap Example</a>
+        <ul class="nav pull-right">
+          <li class="@("active".when(currentPage == "Index"))"><a href="@routes.Application.display()">Index</a></li>
+          <li class="@("active".when(currentPage == "Page 1"))"><a href="@routes.Application.display()">Page 1</a></li>
+          <li class="@("active".when(currentPage == "Page 2"))"><a href="@routes.Application.display()">Page 2</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+    @content
+  </body>
 </html>
