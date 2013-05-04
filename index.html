@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Play-example-bootstrap : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Play-example-bootstrap</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ics-software-engineering/play-example-bootstrap">View on GitHub</a>
+
+          <h1 id="project_title">Play-example-bootstrap</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ics-software-engineering/play-example-bootstrap/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ics-software-engineering/play-example-bootstrap/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><img src="https://raw.github.com/ics-software-engineering/play-example-bootstrap/master/doc/images/play-example-bootstrap-screenshot.png" alt="screenshot"></p>
+
+<p>An example play application illustrating the use of Twitter Bootstrap 2.x with Play 2.x.
+GitHub Home Page is <a href="http://ics-software-engineering.github.io/play-example-fluentlenium/">here</a>. </p>
+
+<h2>Key Points</h2>
+
+<p>Installation:</p>
+
+<ul>
+<li>Modify <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/project/Build.scala">project/Build.scala</a> to download webjars and bootstrap libraries into your project.</li>
+</ul><p>Make Twitter Bootstrap file available within your application:</p>
+
+<ul>
+<li>Modify <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/conf/routes">conf/routes</a> with a routing for the webjars path.</li>
+<li>Modify <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/main.scala.html">app/views/main.scala.html</a> header to load bootstrap.min.css via the webjar assets directory.</li>
+</ul><p>Tweak the body element so that it doesn't display underneath navbar:</p>
+
+<ul>
+<li>Modify <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/public/stylesheets/main.css">public/stylesheets/main.css</a> to add 50px of padding to the body element (if you are using standard Bootstrap navbar). </li>
+</ul><p>If using forms, provide a new Play "helper" definition so that forms display correctly:</p>
+
+<ul>
+<li>Create <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/helper/twitterBootstrapInput.scala.html">app/views/helper/twitterBootstrapInput.scala.html</a> "helper" which provides <a href="http://twitter.github.io/bootstrap/base-css.html#forms">Bootstrap 2.0 style form element layout</a>.</li>
+<li>In <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/index.scala.html">pages with forms</a>, define your helper as the implicitFieldConstructor</li>
+</ul><p>Make the current page "active" in the navbar:</p>
+
+<ul>
+<li>Modify the <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/main.scala.html">main template</a> to support the "active" page through a currentPage parameter.</li>
+<li>Pass the currentPage parameter to the main template on <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/index.scala.html">each page</a> to tell it which navbar item to make active.</li>
+<li>(Note: in this example, all three navbar items go to the same page.)</li>
+</ul><h2>Usage</h2>
+
+<p>Download the system, invoke <code>play run</code> from the top-level directory, then go to http://localhost:9000 to see the system. It should look like the screen image at the top of this page.   </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Play-example-bootstrap maintained by <a href="https://github.com/ics-software-engineering">ics-software-engineering</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
