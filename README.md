@@ -29,7 +29,7 @@ Make the current page "active" in the navbar:
 Usage
 -----
 
-Download the system, invoke `play run` from the top-level directory, then go to (http://localhost:9000) to see the system. It should look like the screen image at the top of this page. 
+Download the system, invoke `play run` from the top-level directory, then go to http://localhost:9000/ to see the system. It should look like the screen image at the top of this page. 
 
 Screencast
 ----------
