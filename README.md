@@ -7,7 +7,7 @@ GitHub Home Page is [here](http://ics-software-engineering.github.io/play-exampl
 Key Points
 ----------
 
-Installation:
+Download and install Bootstrap to your project:
   * Modify [project/Build.scala](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/project/Build.scala) to download webjars and bootstrap libraries into your project.
   
 Make Twitter Bootstrap file available within your application:
@@ -29,4 +29,22 @@ Make the current page "active" in the navbar:
 Usage
 -----
 
-Download the system, invoke `play run` from the top-level directory, then go to http://localhost:9000 to see the system. It should look like the screen image at the top of this page.   
+Download the system, invoke `play run` from the top-level directory, then go to (http://localhost:9000) to see the system. It should look like the screen image at the top of this page. 
+
+Screencast
+----------
+
+Click the image below to watch a 13 minute walkthrough of this example:
+
+[<img src="https://raw.github.com/ics-software-engineering/play-example-bootstrap/master/doc/images/play-example-bootstrap-youtube.png">](https://www.youtube.com/watch?v=d__EdOxINEw)
+
+Comments? Questions?
+--------------------
+
+Please create a [github issue](https://github.com/ics-software-engineering/play-example-bootstrap/issues).
+
+Revision History
+----------------
+
+  * May 5, 2013: Initial release for Play 2.1.0. 
+  
