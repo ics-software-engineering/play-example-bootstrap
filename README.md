@@ -36,7 +36,7 @@ Screencast
 
 Click the image below to watch a 13 minute walkthrough of this example:
 
-[<img src="https://raw.github.com/ics-software-engineering/play-example-bootstrap/master/doc/images/play-example-bootstrap-youtube.png">](https://www.youtube.com/watch?v=d__EdOxINEw)
+[<img src="https://raw.github.com/ics-software-engineering/play-example-bootstrap/master/doc/images/play-example-bootstrap-youtube.png" width="400">](https://www.youtube.com/watch?v=d__EdOxINEw)
 
 Comments? Questions?
 --------------------
