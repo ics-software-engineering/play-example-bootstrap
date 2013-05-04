@@ -12,8 +12,8 @@ Make Twitter Bootstrap file available within your application:
   * Modify [conf/routes](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/conf/routes) with a routing for the webjars path.
   * Modify [app/views/main.scala.html](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/main.scala.html) header to load bootstrap.min.css via the webjar assets directory.
 
-Tweak the body element so that it doesn't display underneath navbar:
-  * Modify [public/stylesheets/main.css](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/public/stylesheets/main.css) to add 50px of padding to the body element (if you are using standard Bootstrap navbar). 
+Tweak the body element so that it doesn't display underneath the "fixed top" navbar:
+  * Modify [public/stylesheets/main.css](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/public/stylesheets/main.css) to add 50px of padding to the body element (if you are using Bootstrap navbar-fixed-top class). 
 
 If using forms, provide a new Play "helper" definition so that forms display correctly:
   * Create [app/views/helper/twitterBootstrapInput.scala.html](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/helper/twitterBootstrapInput.scala.html) "helper" which provides [Bootstrap 2.0 style form element layout](http://twitter.github.io/bootstrap/base-css.html#forms).
