@@ -21,7 +21,7 @@ If using forms, provide a new Play "helper" definition so that forms display cor
   * Create [app/views/helper/twitterBootstrapInput.scala.html](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/helper/twitterBootstrapInput.scala.html) "helper" which provides [Bootstrap 2.0 style form element layout](http://twitter.github.io/bootstrap/base-css.html#forms).
   * In [pages with forms](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/index.scala.html), define your helper as the implicitFieldConstructor
    
-Support highlighting the current page in the navbar
+Make the current page "active" in the navbar:
   * Modify the [main template](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/main.scala.html) to support the "active" page through a currentPage parameter.
   * Pass the currentPage parameter to the main template on [each page](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/app/views/index.scala.html) to tell it which navbar item to make active.
   * (Note: in this example, all three navbar items go to the same page.)
