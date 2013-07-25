@@ -41,7 +41,8 @@
 <p>Download and install Bootstrap to your project:</p>
 
 <ul>
-<li>Modify <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/project/Build.scala">project/Build.scala</a> to download webjars and bootstrap libraries (CSS and Javascript) into your project.</li>
+<li>Modify <a href="https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/project/Build.scala">project/Build.scala</a> to download webjars and bootstrap libraries (CSS and Javascript) into your project.
+Note that in order to support integration testing using HtmlUnit, the JQuery version is downgraded to 1.8.3. </li>
 </ul><p>Make Twitter Bootstrap files available within your application:</p>
 
 <ul>
@@ -74,6 +75,8 @@
 
 <p><a href="https://www.youtube.com/watch?v=d__EdOxINEw"><img src="https://raw.github.com/ics-software-engineering/play-example-bootstrap/master/doc/images/play-example-bootstrap-youtube.png" width="400"></a></p>
 
+<p>Note this screencast was made in May, 2013 so does not show later changes to this system.</p>
+
 <h2>
 <a name="comments-questions" class="anchor" href="#comments-questions"><span class="octicon octicon-link"></span></a>Comments? Questions?</h2>
 
@@ -83,7 +86,9 @@
 <a name="revision-history" class="anchor" href="#revision-history"><span class="octicon octicon-link"></span></a>Revision History</h2>
 
 <ul>
-<li>May 5, 2013: Initial release for Play 2.1.0. </li>
+<li>May, 2013: Initial release for Play 2.1.0. </li>
+<li>July, 2013: Updated to Play 2.1.1.  Enhanced to show how Bootstrap javascript libraries are loaded. Since HtmlUnit (used for integration testing) currently supports only JQuery 1.8.3, special 
+webjar syntax is used in Build.scala to show how to load a recent version of Bootstrap with an older version of JQuery.</li>
 </ul>
       </section>
     </div>
