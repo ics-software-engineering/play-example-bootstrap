@@ -37,6 +37,8 @@ Click the image below to watch a 13 minute walkthrough of this example:
 
 [<img src="https://raw.github.com/ics-software-engineering/play-example-bootstrap/master/doc/images/play-example-bootstrap-youtube.png" width="400">](https://www.youtube.com/watch?v=d__EdOxINEw)
 
+Note this screencast was made in May, 2013 so does not show later changes to this system.
+
 Comments? Questions?
 --------------------
 
@@ -46,6 +48,6 @@ Revision History
 ----------------
 
   * May, 2013: Initial release for Play 2.1.0. 
-  * July, 2013: Enhanced to show how Bootstrap javascript libraries are loaded. Since HtmlUnit (used for integration testing) currently supports only JQuery 1.8.3, special 
+  * July, 2013: Updated to Play 2.1.1.  Enhanced to show how Bootstrap javascript libraries are loaded. Since HtmlUnit (used for integration testing) currently supports only JQuery 1.8.3, special 
     webjar syntax is used in Build.scala to show how to load a recent version of Bootstrap with an older version of JQuery.
   
