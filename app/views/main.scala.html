@@ -23,5 +23,13 @@
   </div>
   
     @content
+    <script src="@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))"></script>
+    <script src="@routes.WebJarAssets.at(WebJarAssets.locate("js/bootstrap.min.js"))"></script>
+    <!-- The following is not really necessary; just a sanity check to make sure JQuery is loaded. -->
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined') {
+      alert("jQuery library is not found!");
+    }
+    </script>
   </body>
 </html>
