@@ -7,6 +7,7 @@ Key Points
 
 Download and install Bootstrap to your project:
   * Modify [project/Build.scala](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/project/Build.scala) to download webjars and bootstrap libraries (CSS and Javascript) into your project.
+    Note that in order to support integration testing using HtmlUnit, the JQuery version is downgraded to 1.8.3. 
   
 Make Twitter Bootstrap files available within your application:
   * Modify [conf/routes](https://github.com/ics-software-engineering/play-example-bootstrap/blob/master/conf/routes) with a routing for the webjars path.
@@ -44,5 +45,7 @@ Please create a [github issue](https://github.com/ics-software-engineering/play-
 Revision History
 ----------------
 
-  * May 5, 2013: Initial release for Play 2.1.0. 
+  * May, 2013: Initial release for Play 2.1.0. 
+  * July, 2013: Enhanced to show how Bootstrap javascript libraries are loaded. Since HtmlUnit (used for integration testing) currently supports only JQuery 1.8.3, special 
+    webjar syntax is used in Build.scala to show how to load a recent version of Bootstrap with an older version of JQuery.
   
