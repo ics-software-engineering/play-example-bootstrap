@@ -15,11 +15,9 @@ object ApplicationBuild extends Build {
     "org.webjars" % "webjars-play" % "2.1.0",
     "org.webjars" % "bootstrap" % "2.3.2" exclude("org.webjars", "jquery"),
     "org.webjars" % "jquery" % "1.8.3"  // use 1.8.3 so that integration tests with HtmlUnit work.
-    
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
     // Add your own project settings here      
   )
-
 }
